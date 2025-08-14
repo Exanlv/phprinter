@@ -1,0 +1,24 @@
+{
+    "name": "exan/phprint",
+    "description": "Crappy printer web interface",
+    "type": "project",
+    "require": {
+        "exan/poopexpress": "^2.0",
+        "nesbot/carbon": "^3.10"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Exan\\Phprint\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Exanlv",
+            "email": "exan@landviz.nl"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^6.4"
+    }
+}
