@@ -17,5 +17,9 @@ $printController = new PrintController(
     __DIR__ . '/uploads'
 );
 
+if ($router->attempt(['favicon.ico'], ['GET' => fn () => true])) {
+    return false;
+}
+
 $router->attempt([''], ['GET' => $homeController->index(...)])
     || $router->attempt(['print', 'upload'], ['POST' => $printController->upload(...)]);
